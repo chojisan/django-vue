@@ -4,8 +4,9 @@ The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.1/topics/http/urls/
 """
 
+from django.conf.urls import url, include
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
 from rest_framework import routers
 
 from .api.views import index_view, MessageViewSet

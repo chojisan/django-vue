@@ -36,8 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'whitenoise.runserver_nostatic',  # < Per Whitenoise, to disable built in
     'django.contrib.staticfiles',
+    'whitenoise.runserver_nostatic',  # < Per Whitenoise, to disable built in
     'rest_framework',
     'backend.api',
 ]
