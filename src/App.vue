@@ -5,7 +5,11 @@
       <router-link :to="{ name: 'home' }">Vue</router-link>|
       <router-link :to="{ name: 'messages' }">Django Rest</router-link>
     </div>
-    <router-view />
+    <main>
+      <fade-transition origin="center" mode="out-in" :duration="250">
+        <router-view />
+      </fade-transition>
+    </main>
   </div>
 </template>
 
