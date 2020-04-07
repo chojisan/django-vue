@@ -16,7 +16,6 @@ import os
 SETTINGS_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(SETTINGS_DIR)
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
@@ -129,7 +128,7 @@ MIDDLEWARE_CLASSES = (
 STATIC_URL = '/static/'
 # Place static in the same location as webpack build files
 STATIC_ROOT = os.path.join(BASE_DIR, 'dist', 'static')
-STATICFILES_DIRS = []
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'dist'),]
 
 
 ##########

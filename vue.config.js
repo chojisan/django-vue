@@ -4,6 +4,7 @@ const webpack = require("webpack");
 module.exports = {
   outputDir: "dist",
   assetsDir: "static",
+  publicPath: "http://127.0.0.1:8000/",
   // baseUrl: IS_PRODUCTION
   // ? 'http://cdn123.com'
   // : '/',
